@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            DWD
+        </title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="DWD.css">
+
+        <script>
+
+            // Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+            // Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+            
+            //** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+            //** Call: uniquevar.playclip() to play sound
+            
+            var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+                "mp3": "audio/mpeg",
+                "mp4": "audio/mp4",
+                "ogg": "audio/ogg",
+                "wav": "audio/wav"
+            }
+            
+            function createsoundbite(sound){
+                var html5audio=document.createElement('audio')
+                if (html5audio.canPlayType){ //check support for HTML5 audio
+                    for (var i=0; i<arguments.length; i++){
+                        var sourceel=document.createElement('source')
+                        sourceel.setAttribute('src', arguments[i])
+                        if (arguments[i].match(/\.(\w+)$/i))
+                            sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                        html5audio.appendChild(sourceel)
+                    }
+                    html5audio.load()
+                    html5audio.playclip=function(){
+                        html5audio.pause()
+                        html5audio.currentTime=0
+                        html5audio.play()
+                    }
+                    return html5audio
+                }
+                else{
+                    return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+                }
+            }
+            
+            //Initialize two sound clips with 1 fallback file each:
+            var mouseoverdoor=createsoundbite("audio/New Recording 191 1.ogg", "audio/New Recording 191 1.m4a")
+            
+        </script>
+        
+    </head>
+
+    <body>
+        <div class="aa">
+            <img class="max" src="img/ARDUN.png">
+        </div>
+
+        <div class="bb"> 
+            <a href="/Users/aslinurmahmutoglu/Desktop/KODLARIM/vebsütesü/DWD/DOORS.html">
+                <img class="kapı1" src="img/door1.png">
+            </a>
+        </div>
+
+        <div class="cc">
+            <video width="1000" height="800" controls>
+                <source src="vid/kapıyla dans 2.mov" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="dd">
+            <p class="dwd-yazı">
+                Sticking an Arduino accelerometer on the door and using MAX MSP + Ableton, the door's movement turns into sound (by playing with samples of door squeaks).
+                <br>
+                <br>
+                I dance with the door following it's song, and the door sings following my dance.
+                <br>
+                <br>
+                This idea came from the memories of dancing with doors in the house as a little kid.
+            </p>
+        </div>
+
+        <div class="ee">
+            <img class="kapı2" src="img/Door-PNG-HD.png">
+        </div>
+
+        <div class="title2">
+            <img class="başlık" src="img/başlık.png">
+        </div>
+
+        <a nohref onclick="mouseoverdoor.playclip()">
+            <img class="bg" src="img/beyazdoor.png">
+        </a>
+
+        <a href="/Users/aslinurmahmutoglu/Desktop/KODLARIM/vebsütesü/XXX.html">
+            <button class="buton3">
+               &lt;	&lt;	&lt;BACK
+            </button>
+         </a>
+        
+    </body>
+</html>
