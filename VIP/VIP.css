@@ -1,0 +1,450 @@
+body{
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bg {position:fixed;
+	opacity:1;
+	width:95%;
+	height:90%;
+  z-index: -1;
+  top: 0%;
+  left: 0%;
+}
+
+#background {position:fixed;
+	width:100%;
+	height:100%;
+  z-index: -1;
+}
+
+#INFO {
+  background-image: radial-gradient(red, rgb(0, 115, 255));
+	position:fixed;
+  border: 4px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 30%;
+  height:20%;
+  top:75%;
+  left:65%;
+  overflow: auto;
+}
+
+#GOBACK {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border-radius: 50%;
+  padding: 0px; 
+  width: 8%;
+  height:10%;
+  color: black;
+  top:75%;
+  left:5%;
+  overflow: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+#TEST {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 4px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 90%;
+  height:60%;
+  top:5%;
+  left:5%;
+  overflow: auto;
+  opacity: 0.9;
+}
+
+#TEST-HIDE{
+  display: none;
+  position:fixed;
+  border: 4px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 90%;
+  height:60%;
+  top:5%;
+  left:5%;
+  overflow: auto;
+  opacity: 1;
+  z-index: 1;
+}
+
+#INFO:hover + #TEST-HIDE{
+  display:block;
+  color:rgb(6, 0, 72);
+}
+
+
+#bbbg {
+	position:fixed;
+  width: 25%;
+  height: 70%;
+  top:30%;
+}
+
+
+#ENVIRONMENT {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 4px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 70%;
+  height:50%;
+  top:10%;
+  left:7.5%;
+  overflow: auto;
+}
+
+#SEQUENCES {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 10%;
+  height:20%;
+  top:30%;
+  left:80%;
+  overflow: auto;
+}
+
+#ddbg {background-color: white;
+	opacity:0.4;
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 25%;
+  height: 50%;
+  top:50%;
+  left:60%;
+  overflow: auto;
+}
+
+#I2S {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 40%;
+  height:40%;
+  top:15%;
+  left:20%;
+  overflow: auto;
+  z-index: -1;
+}
+
+#I2S-HIDE {
+  display: none;
+  position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 40%;
+  height:40%;
+  top:15%;
+  left:20%;
+  overflow: auto;
+  z-index: 1;
+}
+
+#I2S:hover + #I2S-HIDE {
+  display:block;
+  color:rgb(6, 0, 72);
+}
+
+#CONFIG {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 10%;
+  height:20%;
+  top:30%;
+  left:65%;
+  overflow: auto;
+}
+
+#SEQUENCER {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 15%;
+  height: 10%;
+  top:30%;
+  left:42.5%;
+  overflow: auto;
+}
+
+#DRIVER {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 15%;
+  height: 10%;
+  top:42.5%;
+  left:42.5%;
+  overflow: auto;
+}
+
+#MONITOR {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 15%;
+  height: 10%;
+  top:42.5%;
+  left:22.5%;
+  overflow: auto;
+}
+
+#SCOREBOARD {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 5%;
+  height: 40%;
+  top:15%;
+  left:11.5%;
+  overflow: auto;
+  z-index: -1;
+}
+
+#A_L {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 4px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 30%;
+  height:20%;
+  top:75%;
+  left:25%;
+  overflow: auto;
+  opacity: 0.9;
+}
+
+#DUT {
+  background-image: radial-gradient(red, rgb(51, 255, 0), gray);
+	position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 10%;
+  height:10%;
+  top:80%;
+  left:35%;
+  overflow: auto;
+}
+
+#DUT-HIDE{
+  display: none;
+  position:fixed;
+  border: 2px solid;
+  border-style:dotted;
+  border-radius: 9px;
+  padding: 0px; 
+  width: 10%;
+  height:10%;
+  top:77%;
+  left:40%;
+  overflow: auto;
+}
+
+#DUT:hover + #DUT-HIDE {
+  display:block;
+  color:rgb(6, 0, 72);
+}
+
+#product{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#ok1{
+  position: absolute;
+  width: 5%;
+  height: auto;
+  top: 58%;
+  left:70%;
+  z-index: 1;
+}
+
+#ok2{
+  position: absolute;
+  width: 5%;
+  height: auto;
+  top: 86%;
+  left:70%;
+  z-index: 1;
+}
+
+#ok3{
+  position: absolute;
+  width: 5%;
+  height: auto;
+  top: 86%;
+  left:20%;
+  z-index: 1;
+}
+
+#ok4{
+  position: absolute;
+  width: 5%;
+  height: auto;
+  top: 50%;
+  left:13%;
+  z-index: 1;
+}
+
+#ok5{
+  position: absolute;
+  width: 7%;
+  height: auto;
+  top: 50%;
+  left:75%;
+  z-index: 1;
+}
+
+#ok6{
+  position: absolute;
+  width: 2%;
+  height: auto;
+  top: 33%;
+  left:87.5%;
+  z-index: 1;
+}
+
+#ok7{
+  position:absolute;
+  width: 3%;
+  height: auto;
+  top: 30%;
+  left:84.5%;
+  z-index: 1;
+}
+#ok7-2{
+  position:absolute;
+  width: 3%;
+  height: auto;
+  top: 30%;
+  left:79.5%;
+  z-index: 1;
+}
+#ok7-3{
+  position:absolute;
+  width: 3%;
+  height: auto;
+  top: 30%;
+  left:74.5%;
+  z-index: 1;
+}
+#ok7-4{
+  position:absolute;
+  width: 3%;
+  height: auto;
+  top: 30%;
+  left:69.5%;
+  z-index: 1;
+}
+#ok7-5{
+  position:absolute;
+  width: 3%;
+  height: auto;
+  top: 30%;
+  left:64.5%;
+  z-index: 1;
+}
+#ok7-6{
+  position:absolute;
+  width: 3%;
+  height: auto;
+  top: 30%;
+  left:59.5%;
+  z-index: 1;
+}
+#ok7-7{
+  position:absolute;
+  width: 3%;
+  height: auto;
+  top: 30%;
+  left:54.5%;
+  z-index: 1;
+}
+#ok7-8{
+  position:absolute;
+  width: 3%;
+  height: auto;
+  top: 30%;
+  left:49.5%;
+  z-index: 1;
+}
+
+#ok8{
+  position:absolute;
+  width: 2%;
+  height: auto;
+  top: 33%;
+  left:48%;
+  z-index: 1;
+}
+
+#ok9{
+  position:absolute;
+  width: 6%;
+  height: auto;
+  top: 66%;
+  left:40%;
+  z-index: 1;
+}
+
+.silver{
+  position: absolute;
+  z-index: -1;
+}
+
+.explain{
+  z-index: 1;
+  margin-left: 10px;
+}
+
+.protocol{
+  position: absolute;
+  top: -10%;
+  left: 10%;
+  z-index: 1;
+}
