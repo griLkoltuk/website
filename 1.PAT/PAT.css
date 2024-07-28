@@ -1,0 +1,605 @@
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.bölüm_bir{
+    background-image: url("images/Correct\ Reconstruction.png");
+    background-repeat: no-repeat;
+    background-color: #000000;  
+    height: 1000px;
+    background-position: center;
+    background-size: contain;
+}
+
+.bölüm_dört{
+  position: absolute;
+  height: 79%;
+  display: flex;
+  top: 15%;
+  left: 7%;
+  z-index: -1;
+  opacity: 0.75;
+  overflow: auto;
+}
+
+.başlık {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #ff00ee;
+    color: rgb(255, 0, 0);
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.başlık2 {
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #ff00ee;
+  color: rgb(255, 0, 0);
+  font-style: normal;
+  text-align: center;
+  margin-bottom: -40px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.altbaşlık {
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #00ff40;
+    text-shadow: 1px 1px 3px #ff00ee;
+    font-style: normal;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+
+.düz {
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-style: normal;
+    text-align: left;
+    margin-left: 330px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.daha-düz {
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-style: normal;
+    text-align: left;
+    margin-left: 330px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.lazer {
+    opacity: 0.5;
+    position:absolute;
+    margin-top: -550px;
+    margin-left: 70px;
+    width: 90%;
+    height: auto;
+    z-index: -1;
+}
+
+.PDF {
+    width: 55%;
+    border-radius: 50%;
+}
+
+.BG {
+    position: absolute;
+    scale: 25%;
+    margin-left: 300px;
+    margin-top: -120px;
+    z-index: -1;
+}
+
+.BG2 {
+    position:absolute;
+    scale: 25%;
+    margin-left:10px;
+    margin-top: 40px;
+    z-index: -1;
+}
+
+.buton {
+    color:rgb(187, 0, 255);  
+    cursor: pointer;
+    margin-left: 300px; 
+    font-size: 30px;
+    font-family: serif;
+    text-shadow: 2px 2px 3px #5900ff;   
+    display:flex;
+
+    transition: color 0.1s;
+}
+
+.buton:hover {
+    color:#db5233;
+}
+
+.buton.active{
+    color:#ff3c00;
+}
+
+.siir {
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-style: normal;
+    text-align: left;
+    margin-left: 380px;
+    margin-right: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+.buton2 {
+    color:rgb(240, 200, 255);  
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 400px; 
+    font-size: 30px;
+    font-family: serif;
+    text-shadow: 1px 1px 3px #ff00ee;   
+    display:flex;
+
+    transition: color 0.1s;
+}
+
+.buton2:hover {
+    color:#eb5c3c;
+}
+
+.buton2.active{
+    color:#ff3c00;
+}
+
+.buton3 {
+    color:rgb(187, 0, 255);  
+    cursor: pointer;
+    margin-top: -600px;
+    margin-left: 810px; 
+    font-size: 17px;
+    font-family: serif;
+    text-shadow: 1px 1px 3px #ff00ee;   
+    display:flex;
+
+    transition: color 0.1s;
+}
+
+.buton3:hover {
+    color:#eb5c3c;
+}
+
+.buton3.active{
+    color:#ff3c00;
+}
+
+/* Utility classes */
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate.animate--infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  .animate.animate--delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .animate.animate--fast {
+    animation-duration: 1.3s;
+  }
+  
+  .animate.animate--slow {
+    animation-duration: 8s;
+  }
+  
+  /* Animations */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-1000px);
+    }
+  
+    to {
+      transform: translateY(0px);
+    }
+  }
+  
+  .slideDown {
+    animation-name: slideDown;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-300px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .slideInLeft {
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(800px);
+    }
+  
+    to {
+      transform: translateX(-800px);
+    }
+  }
+  
+  .slideInRight {
+    animation-name: slideInRight;
+    animation-timing-function:linear;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation-name: rotate;
+    animation-timing-function: linear;
+  
+    transform-origin: top left;
+  }
+  
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    40% {
+      transform: translateY(-30px);
+    }
+  
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bounce {
+    animation-name: bounce;
+  }
+
+  .k-wave {
+    scale: 40%;
+    margin-top: -240px;
+    margin-left: -440px;
+  }
+
+  .code {
+    font-size: medium;
+    position: absolute;
+    font-family:monospace;
+    color: #ff3c00;
+    margin-left: 750px;
+    font-weight: 600;
+  }
+
+  .visualisation{
+    position: fixed;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    margin-left: 35%;
+    margin-top: 400px;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px #000000;   
+  }
+
+  .buton4 {
+    color:rgb(187, 0, 255);  
+    cursor: pointer;
+    margin-left: 10%; 
+    margin-top: 27%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #ff4400;   
+    display:flex;
+    z-index: 1;
+    position: absolute;
+
+    transition: color 0.1s;
+}
+
+.buton4:hover {
+    color:#ff2f00;
+}
+
+.buton4.active{
+    color:#ff3c00;
+}
+
+.altbaşlık2 {
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #00ff40;
+    text-shadow: 1px 1px 4px #590053;
+    font-style: normal;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+.algo {
+    font-size: 23px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-shadow: 1px 1px 4px #0c070b;
+    font-style: normal;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.kayan-foto{
+  margin-top: 40%;
+  margin-left: 5%;
+  scale:40%;
+  z-index: 1;
+}
+
+.kayan-foto2{
+  margin-top: 10%;
+  margin-left: -70px;
+  scale:30%;
+  z-index: 1;
+}
+
+.flier {
+	pointer-events: none;
+}
+
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 50s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+.fly{
+  width: 20%;
+  height: auto;
+  z-index: 1;
+}
+
+
+.bb {
+	position:absolute;
+  padding: 0px; 
+  width: 20%;
+  height:55%;
+  top:35%;
+  left:0%;
+  overflow: auto;
+}
+
+.ppdf{
+  position:fixed;
+  padding: 0px; 
+  width: 10%;
+  height:10%;
+  top:60%;
+  left:84%;
+  overflow: auto;
+  object-position: center;
+}
+
+#scroll-container {
+  height: auto;
+  overflow: hidden;
+}
+
+#scroll-text {
+  height: 100%;
+  text-align: right;
+  opacity: 0.4;
+  
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+.corner{
+  position: absolute;
+  width: 20%;
+  left: 80%;
+  top:0%;
+  z-index: -1;
+}
+
+.corner2{
+  position: absolute;
+  width: 20%;
+  left: 0%;
+  top:0%;
+  z-index: -1;
+}
+
+.go-back{
+  position: absolute;
+  cursor: pointer;
+  width: 20%;
+  left: 3%;
+  top:90%;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #cd0000;   
+
+  transition: color 0.1s;
+}
+
+.go-back:hover {
+  color:#4d1cff;
+}
+
+.go-back.active{
+  color:#4d1cff;
+}
+
+#last{
+  position:absolute;
+  display: flex;
+  height: 45%;
+  top: 30%;
+  left: 80%;
+  z-index: -1;
+  overflow: auto;
+}
+
+.blabla{
+  font-size: 15px;
+  z-index: 1;
+  position:absolute;
+  height: 45%;
+  width: 10%;
+  top: 37%;
+  left: 85%;
+  z-index: -1;
+  overflow: auto;
+}
+
+
+.PDF2{
+  position: absolute;
+  height: 10%;
+  left: 90%;
+  top: 80%;
+}

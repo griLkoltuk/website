@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HFM
+        </title>
+        <link rel="stylesheet" href="PAT.css">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body style="background-color:rgb(255, 255, 255);"></p>
+
+    <body>
+        <img class="bölüm_dört" src="images/ladder.png">
+            <p class="başlık">
+                HFM = Hybrid Focusing Metric = the best metric ever
+            </p>
+    
+            <p class="altbaşlık2">
+                sharpness+compactness was the key so we did the math 
+                <br> wrote our own lovely algorithm 
+                <br> to estimate the correct sound speed combination for skin layers:
+            </p>
+
+            <p class="algo">
+                <strong>input:</strong> reconstructed image set <i>I(x,y,c)</i>
+                <br>
+                <strong>output:</strong> enhanced estimated image and sound speeds
+                <br>
+                <strong>1.</strong>  reconstruct image <i>I(x,y)</i> of sound speeds <i>c<sub>1</sub>,...c<sub>n</sub></i>.
+                <br>
+                <strong>2.</strong> compute sharpness value <i>F<sub>intensity</sub> &#8592; I(x,y)</i>
+                <br>
+                <strong>3.</strong> compute the normalized histogram of <i>I(x,y)</i>
+                <br>
+                <strong>4.</strong> compute mean intensities <i>&#956;<sub>c</sub>(k)  &#956;<sub>g</sub>(k)</i> 
+                <a href= https://www.youtube.com/watch?v=OXFZwIwhEgw> by Otsu's method </a>
+                <br>
+                <strong>5.</strong> compute the class variance <i>&#963;<sub>b</sub><sup>2</sup>(k)</i>
+                <br>
+                <strong>6.</strong> find <i>K</i> such that <i>&#963;<sub>b</sub><sup>2</sup>(K)</i> &#8592; <i>&#963;<sub>b</sub><sup>2</sup>(k)</i>  &#8707; <i>K</i> &#8712; <i>[0, L]</i>
+                <br>
+                <strong>7.</strong> <strong>if</strong> threshold number &#8800; 1 <strong>then</strong>
+                <br>
+                <i> K &#x2190; (K<sub>1</sub> + K<sub>2</sub> + ... + K<sub>n</sub>) </i> / <i>n</i>
+                <br>
+                <strong>end if</strong>
+                <br>
+                <strong>8.</strong> <i>f(x, y) </i> = 1 for <i>I(x, y) &#8805; K</i>  
+                <br><i>f(x, y) </i> = 0 for <i>I(x, y) 	&lt; K</i> 
+                <br>
+                <strong>9.</strong> <i>F<sub>TPC</sub></i> &#x2190; <strong>sum</strong> <i>f(x, y)</i>
+                <br>
+                <strong>10.</strong> <i>F<sub>HFM</sub>(c<sub>1</sub>,...,c<sub>n</sub>)</i> = <i>F<sub>intensity</sub> / F<sub>TPC</sub></i>
+                <br>
+                <strong>11.</strong> <strong>return</strong> c<sub>1</sub>,...,c<sub>n</sub>  &#x2190; <i>max(F<sub>(c<sub>1</sub>,...,c<sub>n</sub>)</sub>)</i>
+                <br>
+            </p>
+
+            <a href="docs/Hybrid_Focusing_Metric_for_Sound_Speed_Estimation_.pdf" download>
+                <img class=PDF2 src="images/PDF.png">
+            </a>
+  
+            <div class="flier">
+                <img class="fly" src="images/red-1.png">
+            </div>
+
+
+        <a href="/Users/aslinurmahmutoglu/Desktop/KODLARIM/vebsütesü/1.PAT/K-WAVE.html">
+            <p class="go-back"> &lt; &lt; &lt;go back</p>
+        </a>
+
+        <img id=last src="images/frame.png">
+
+        <p class="blabla">
+            The main contribution I had on this project is simulating and analyzing data hence the discovery of this new metric as well as literature search.
+        </p>
+
+
+    </body>
+</html>
