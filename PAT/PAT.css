@@ -318,6 +318,7 @@
     top: 20%;
     left: 4%;
     position: absolute;
+    display: block;
   }
 
   .code {
