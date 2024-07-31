@@ -317,7 +317,7 @@
     height:auto;
     top: 25%;
     left: 4%;
-    position: absolute;
+    position: fixed;
     display: block;
   }
 
