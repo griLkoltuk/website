@@ -313,9 +313,12 @@
   }
 
   .k-wave {
-    scale: 40%;
-    margin-top: -240px;
-    margin-left: -440px;
+    width: 50%;
+    height:auto;
+    top: 20%;
+    left: 4%;
+    display: block;
+    position: absolute;
   }
 
   .code {
@@ -323,7 +326,7 @@
     position: absolute;
     font-family:monospace;
     color: #ff3c00;
-    margin-left: 750px;
+    left: 55%;
     font-weight: 600;
   }
 
